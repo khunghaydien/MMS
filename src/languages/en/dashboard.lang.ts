@@ -1,0 +1,21 @@
+export default {
+  // text
+  TXT_STAFF_ALLOCATION: 'Staff Allocation',
+  TXT_PROJECT_ALLOCATION: 'Project Allocation',
+  TXT_KPI_METRIC: 'KPI Metric',
+  TXT_GENERATE: 'Generate',
+  TXT_BUSY_RATE: 'Busy Rate',
+  TXT_TOTAL_STAFF: 'Total Staff',
+  TXT_NOT_ASSIGNED_STAFF: 'Not-Assigned Staff',
+  TXT_STAFF_ASSIGN_ALLOCATION: 'Staff Assign Allocation',
+  TXT_VIEW_ALL_ALLOCATE: 'View all allocate',
+  TXT_VIEW_SUMMARY: 'View summary',
+  TXT_TOTAL_EFFORT: 'Total Effort',
+  TXT_SUMMARY: 'Summary',
+  TXT_TOTAL_PROJECT: 'Total Project',
+  TXT_TOTAL_BILLABLE_MM: 'Total Billable MM',
+  TXT_TOTAL_ASSIGN_EFFORT: 'Total Assign Effort',
+  TXT_TOTAL_ACTUAL_EFFORT: 'Total Actual Effort',
+  TXT_USAGE_EFFICIENCY: 'Usage Efficiency',
+  TXT_VIEW_ALL_METRICS: 'View All Metrics',
+}

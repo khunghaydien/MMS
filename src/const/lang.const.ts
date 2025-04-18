@@ -1,0 +1,15 @@
+export const DEFAULT_LANGUAGE = 'en'
+
+export const DEFAULT_NAMESPACE = 'common'
+
+export const NS_COMMON = 'common'
+export const NS_LOGIN = 'login'
+export const NS_CUSTOMER = 'customer'
+export const NS_PROJECT = 'project'
+export const NS_STAFF = 'staff'
+export const NS_DAILY_REPORT = 'dailyReport'
+export const NS_FINANCE = 'finance'
+export const NS_SETTING = 'setting'
+export const NS_CONTRACT = 'contract'
+export const NS_MBO = 'mbo'
+export const NS_DASHBOARD = 'dashboard'

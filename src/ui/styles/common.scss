@@ -1,0 +1,260 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html {
+  overflow-y: hidden;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333333;
+  overflow-y: auto;
+}
+
+input {
+  &:disabled {
+    color: #d2d9de;
+    font-weight: 400;
+  }
+}
+
+.no-style-link {
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.position-rel {
+  position: relative;
+}
+
+.position-abs {
+  position: absolute;
+}
+
+.center-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.space-between-root {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1; // default 1 line
+  -webkit-box-orient: vertical;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background: #d2d9de;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.display-flex {
+  display: flex;
+}
+
+img {
+  width: 100%;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #666666 !important;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #666666 !important;
+  font-size: 14px;
+}
+
+::placeholder {
+  color: #666666 !important;
+  font-size: 14px;
+  font-family: 'Roboto';
+}
+
+textarea::-webkit-input-placeholder {
+  color: #666666 !important;
+  font-size: 14px;
+}
+
+textarea:-moz-placeholder {
+  /* Firefox 18- */
+  color: #666666 !important;
+  font-size: 14px;
+}
+
+textarea::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #666666 !important;
+  font-size: 14px;
+}
+
+textarea:-ms-input-placeholder {
+  color: #666666 !important;
+  font-size: 14px;
+}
+
+.currency-input {
+  width: 100%;
+  padding: 10.5px;
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid rgba(0, 0, 0, 0.23);
+
+  &:hover {
+    border-color: black;
+  }
+
+  &:focus {
+    border: 2px solid rgb(32 93 206);
+    padding: 11px;
+  }
+
+  &.error {
+    border-color: #d32f2f;
+  }
+}
+
+.medium {
+  fill: #ffab00;
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animation-loading {
+  animation: pulse 1s infinite ease-in-out alternate !important;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+  }
+
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.custom-close-icon {
+  position: absolute;
+  right: 35px;
+  top: 6px;
+  z-index: 1;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.04);
+    border-radius: 50%;
+  }
+
+  & svg {
+    font-size: 19px;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+[data-tooltip] {
+  position: relative;
+}
+
+[data-tooltip]:after {
+  content: attr(data-tooltip);
+  position: absolute;
+  right: 100%;
+  bottom: 100%;
+  /* put it on the top */
+  background-color: #fff;
+  border: 1px solid black;
+  color: black;
+  padding: 4px;
+  font-size: 14px;
+  width: max-content;
+  opacity: 0;
+  display: none;
+  -webkit-transition: opacity 0.2s;
+  z-index: 999999;
+}
+
+[data-tooltip]:hover:after {
+  opacity: 1;
+  display: block;
+}
+
+.total-item {
+  display: flex;
+  gap: 16px;
+  margin-top: 16px;
+
+  & .label {
+    font-weight: 700;
+  }
+}
+
+.kpi-categories-sticky {
+  position: fixed;
+  top: 88px;
+}
